@@ -7,15 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3E378F2F88DBBC00791240 /* ReloadDetailsDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3E378E2F88DBBC00791240 /* ReloadDetailsDelegateProtocol.swift */; };
+		AC3E37912F891B6100791240 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3E37902F891B6100791240 /* ImagePicker.swift */; };
+		AC3E37952F89410C00791240 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AC3E37942F89410C00791240 /* Alamofire */; };
+		ACAC1F542F877BB4005C097E /* EmployeeListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F532F877BB4005C097E /* EmployeeListBuilder.swift */; };
+		ACAC1F562F877BDC005C097E /* EmployeeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F552F877BDC005C097E /* EmployeeListPresenter.swift */; };
+		ACAC1F582F877C01005C097E /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F572F877C01005C097E /* EmployeeListView.swift */; };
+		ACAC1F5A2F877C7B005C097E /* EmployeeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F592F877C7B005C097E /* EmployeeListRouter.swift */; };
+		ACAC1F5C2F877C90005C097E /* EmployeeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F5B2F877C90005C097E /* EmployeeListInteractor.swift */; };
+		ACAC1F5E2F877CAA005C097E /* EmployeeListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F5D2F877CAA005C097E /* EmployeeListEntity.swift */; };
+		ACAC1F612F877D62005C097E /* EmployeeDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F602F877D62005C097E /* EmployeeDetailsBuilder.swift */; };
+		ACAC1F632F877D76005C097E /* EmployeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F622F877D76005C097E /* EmployeeDetailView.swift */; };
+		ACAC1F652F877D92005C097E /* EmployeeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F642F877D92005C097E /* EmployeeDetailPresenter.swift */; };
+		ACAC1F682F877DC1005C097E /* AddEmployeeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F672F877DC1005C097E /* AddEmployeeBuilder.swift */; };
+		ACAC1F6A2F877DDB005C097E /* AddEmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F692F877DDB005C097E /* AddEmployeeView.swift */; };
+		ACAC1F6D2F87881C005C097E /* AddEmployeePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F6C2F87881C005C097E /* AddEmployeePresenter.swift */; };
+		ACAC1F6F2F878840005C097E /* AddEmployeeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F6E2F878840005C097E /* AddEmployeeInteractor.swift */; };
+		ACAC1F712F87885B005C097E /* AddEmployeeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F702F87885B005C097E /* AddEmployeeRouter.swift */; };
+		ACAC1F732F87AE80005C097E /* EmployeeListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F722F87AE80005C097E /* EmployeeListContract.swift */; };
+		ACAC1F752F87B657005C097E /* ReusableComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F742F87B657005C097E /* ReusableComponents.swift */; };
+		ACAC1F772F87BECB005C097E /* HeaderCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F762F87BECB005C097E /* HeaderCurveView.swift */; };
+		ACAC1F7A2F87C9D9005C097E /* EmployeeDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC1F792F87C9D9005C097E /* EmployeeDetailsRouter.swift */; };
+		ACBBC7212F8A84B500458806 /* AddEmployeeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBBC7202F8A84B500458806 /* AddEmployeeEntity.swift */; };
 		ACCFA9912F8547BE00AFDB52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFA9902F8547BE00AFDB52 /* AppDelegate.swift */; };
 		ACCFA9932F8547BE00AFDB52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFA9922F8547BE00AFDB52 /* SceneDelegate.swift */; };
 		ACCFA9952F8547BE00AFDB52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFA9942F8547BE00AFDB52 /* ViewController.swift */; };
 		ACCFA9982F8547BE00AFDB52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCFA9962F8547BE00AFDB52 /* Main.storyboard */; };
 		ACCFA99A2F8547C300AFDB52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCFA9992F8547C300AFDB52 /* Assets.xcassets */; };
 		ACCFA99D2F8547C300AFDB52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCFA99B2F8547C300AFDB52 /* LaunchScreen.storyboard */; };
+		ACCFA9A52F8547DB00AFDB52 /* CompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFA9A42F8547DB00AFDB52 /* CompositionRoot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC3E378E2F88DBBC00791240 /* ReloadDetailsDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadDetailsDelegateProtocol.swift; sourceTree = "<group>"; };
+		AC3E37902F891B6100791240 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		ACAC1F532F877BB4005C097E /* EmployeeListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListBuilder.swift; sourceTree = "<group>"; };
+		ACAC1F552F877BDC005C097E /* EmployeeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListPresenter.swift; sourceTree = "<group>"; };
+		ACAC1F572F877C01005C097E /* EmployeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
+		ACAC1F592F877C7B005C097E /* EmployeeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListRouter.swift; sourceTree = "<group>"; };
+		ACAC1F5B2F877C90005C097E /* EmployeeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListInteractor.swift; sourceTree = "<group>"; };
+		ACAC1F5D2F877CAA005C097E /* EmployeeListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListEntity.swift; sourceTree = "<group>"; };
+		ACAC1F602F877D62005C097E /* EmployeeDetailsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsBuilder.swift; sourceTree = "<group>"; };
+		ACAC1F622F877D76005C097E /* EmployeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailView.swift; sourceTree = "<group>"; };
+		ACAC1F642F877D92005C097E /* EmployeeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailPresenter.swift; sourceTree = "<group>"; };
+		ACAC1F672F877DC1005C097E /* AddEmployeeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeBuilder.swift; sourceTree = "<group>"; };
+		ACAC1F692F877DDB005C097E /* AddEmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeView.swift; sourceTree = "<group>"; };
+		ACAC1F6C2F87881C005C097E /* AddEmployeePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeePresenter.swift; sourceTree = "<group>"; };
+		ACAC1F6E2F878840005C097E /* AddEmployeeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeInteractor.swift; sourceTree = "<group>"; };
+		ACAC1F702F87885B005C097E /* AddEmployeeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeRouter.swift; sourceTree = "<group>"; };
+		ACAC1F722F87AE80005C097E /* EmployeeListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListContract.swift; sourceTree = "<group>"; };
+		ACAC1F742F87B657005C097E /* ReusableComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableComponents.swift; sourceTree = "<group>"; };
+		ACAC1F762F87BECB005C097E /* HeaderCurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCurveView.swift; sourceTree = "<group>"; };
+		ACAC1F792F87C9D9005C097E /* EmployeeDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsRouter.swift; sourceTree = "<group>"; };
+		ACBBC7202F8A84B500458806 /* AddEmployeeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeEntity.swift; sourceTree = "<group>"; };
 		ACCFA98D2F8547BE00AFDB52 /* Employee_Management_System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Employee_Management_System.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCFA9902F8547BE00AFDB52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACCFA9922F8547BE00AFDB52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +68,7 @@
 		ACCFA9992F8547C300AFDB52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACCFA99C2F8547C300AFDB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACCFA99E2F8547C300AFDB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCFA9A42F8547DB00AFDB52 /* CompositionRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionRoot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +76,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3E37952F89410C00791240 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ACAC1F5F2F877CB7005C097E /* EmployeeListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ACAC1F532F877BB4005C097E /* EmployeeListBuilder.swift */,
+				ACAC1F552F877BDC005C097E /* EmployeeListPresenter.swift */,
+				ACAC1F572F877C01005C097E /* EmployeeListView.swift */,
+				ACAC1F592F877C7B005C097E /* EmployeeListRouter.swift */,
+				ACAC1F5B2F877C90005C097E /* EmployeeListInteractor.swift */,
+				ACAC1F5D2F877CAA005C097E /* EmployeeListEntity.swift */,
+				ACAC1F722F87AE80005C097E /* EmployeeListContract.swift */,
+			);
+			path = EmployeeListScreen;
+			sourceTree = "<group>";
+		};
+		ACAC1F662F877DA1005C097E /* EmployeeDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ACAC1F782F87C6FF005C097E /* SubViews */,
+				ACAC1F602F877D62005C097E /* EmployeeDetailsBuilder.swift */,
+				ACAC1F792F87C9D9005C097E /* EmployeeDetailsRouter.swift */,
+				AC3E378E2F88DBBC00791240 /* ReloadDetailsDelegateProtocol.swift */,
+				ACAC1F622F877D76005C097E /* EmployeeDetailView.swift */,
+				ACAC1F642F877D92005C097E /* EmployeeDetailPresenter.swift */,
+			);
+			path = EmployeeDetailsScreen;
+			sourceTree = "<group>";
+		};
+		ACAC1F6B2F877DEC005C097E /* AddEmployeeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ACAC1F672F877DC1005C097E /* AddEmployeeBuilder.swift */,
+				ACAC1F692F877DDB005C097E /* AddEmployeeView.swift */,
+				ACAC1F6C2F87881C005C097E /* AddEmployeePresenter.swift */,
+				ACBBC7202F8A84B500458806 /* AddEmployeeEntity.swift */,
+				ACAC1F6E2F878840005C097E /* AddEmployeeInteractor.swift */,
+				ACAC1F702F87885B005C097E /* AddEmployeeRouter.swift */,
+			);
+			path = AddEmployeeScreen;
+			sourceTree = "<group>";
+		};
+		ACAC1F782F87C6FF005C097E /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				ACAC1F762F87BECB005C097E /* HeaderCurveView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		ACCFA9842F8547BE00AFDB52 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +153,12 @@
 				ACCFA9902F8547BE00AFDB52 /* AppDelegate.swift */,
 				ACCFA9922F8547BE00AFDB52 /* SceneDelegate.swift */,
 				ACCFA9942F8547BE00AFDB52 /* ViewController.swift */,
+				ACCFA9A42F8547DB00AFDB52 /* CompositionRoot.swift */,
+				ACAC1F742F87B657005C097E /* ReusableComponents.swift */,
+				AC3E37902F891B6100791240 /* ImagePicker.swift */,
+				ACAC1F5F2F877CB7005C097E /* EmployeeListScreen */,
+				ACAC1F6B2F877DEC005C097E /* AddEmployeeScreen */,
+				ACAC1F662F877DA1005C097E /* EmployeeDetailsScreen */,
 				ACCFA9962F8547BE00AFDB52 /* Main.storyboard */,
 				ACCFA9992F8547C300AFDB52 /* Assets.xcassets */,
 				ACCFA99B2F8547C300AFDB52 /* LaunchScreen.storyboard */,
@@ -83,6 +183,9 @@
 			dependencies = (
 			);
 			name = Employee_Management_System;
+			packageProductDependencies = (
+				AC3E37942F89410C00791240 /* Alamofire */,
+			);
 			productName = Employee_Management_System;
 			productReference = ACCFA98D2F8547BE00AFDB52 /* Employee_Management_System.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +214,9 @@
 				Base,
 			);
 			mainGroup = ACCFA9842F8547BE00AFDB52;
+			packageReferences = (
+				AC3E37932F89410C00791240 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = ACCFA98E2F8547BE00AFDB52 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +244,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAC1F612F877D62005C097E /* EmployeeDetailsBuilder.swift in Sources */,
+				ACAC1F5A2F877C7B005C097E /* EmployeeListRouter.swift in Sources */,
+				ACAC1F772F87BECB005C097E /* HeaderCurveView.swift in Sources */,
+				ACAC1F542F877BB4005C097E /* EmployeeListBuilder.swift in Sources */,
+				ACAC1F5C2F877C90005C097E /* EmployeeListInteractor.swift in Sources */,
+				ACAC1F752F87B657005C097E /* ReusableComponents.swift in Sources */,
+				ACAC1F6F2F878840005C097E /* AddEmployeeInteractor.swift in Sources */,
+				ACAC1F582F877C01005C097E /* EmployeeListView.swift in Sources */,
+				ACBBC7212F8A84B500458806 /* AddEmployeeEntity.swift in Sources */,
+				ACAC1F712F87885B005C097E /* AddEmployeeRouter.swift in Sources */,
+				ACCFA9A52F8547DB00AFDB52 /* CompositionRoot.swift in Sources */,
+				ACAC1F732F87AE80005C097E /* EmployeeListContract.swift in Sources */,
+				ACAC1F7A2F87C9D9005C097E /* EmployeeDetailsRouter.swift in Sources */,
+				ACAC1F6D2F87881C005C097E /* AddEmployeePresenter.swift in Sources */,
 				ACCFA9952F8547BE00AFDB52 /* ViewController.swift in Sources */,
+				ACAC1F652F877D92005C097E /* EmployeeDetailPresenter.swift in Sources */,
+				AC3E378F2F88DBBC00791240 /* ReloadDetailsDelegateProtocol.swift in Sources */,
+				ACAC1F5E2F877CAA005C097E /* EmployeeListEntity.swift in Sources */,
 				ACCFA9912F8547BE00AFDB52 /* AppDelegate.swift in Sources */,
+				ACAC1F632F877D76005C097E /* EmployeeDetailView.swift in Sources */,
+				ACAC1F6A2F877DDB005C097E /* AddEmployeeView.swift in Sources */,
+				ACAC1F682F877DC1005C097E /* AddEmployeeBuilder.swift in Sources */,
+				AC3E37912F891B6100791240 /* ImagePicker.swift in Sources */,
+				ACAC1F562F877BDC005C097E /* EmployeeListPresenter.swift in Sources */,
 				ACCFA9932F8547BE00AFDB52 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +484,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC3E37932F89410C00791240 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC3E37942F89410C00791240 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC3E37932F89410C00791240 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACCFA9852F8547BE00AFDB52 /* Project object */;
 }
