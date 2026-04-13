@@ -12,7 +12,7 @@ import UIKit
 class AddEmployeePresenter: ObservableObject{
     
     
-    @Published var showAlert = false
+//    @Published var showAlert = false
     @Published var name: String = ""
     @Published var email: String = ""
     @Published var phone: String = ""
@@ -100,7 +100,14 @@ class AddEmployeePresenter: ObservableObject{
                 
                 await MainActor.run{
                     if response == true{
-                        self.showSuccessAlert = true
+                        self.alert = .success(
+                            title: "Success",
+                            message: "Employee has been added successfully.",
+                            onClick: {
+                                self.reloadListScreen()
+                                self.goToPreviousScreen()
+                            })
+                        
                         self.isSaving = false
                     }
                 }
@@ -130,7 +137,15 @@ class AddEmployeePresenter: ObservableObject{
                 await MainActor.run{
                     if response.0 == true{
                         self.employee = response.1
-                        self.showSuccessAlert = true
+                        self.alert = .success(
+                            title: "Success",
+                            message: "Employee has been updated successfully.",
+                            onClick: {
+                                
+                                self.reloadListScreen()
+                                self.reloadDetailsScreen()
+                                self.goToPreviousScreen()
+                            })
                         self.isSaving = false
                     }
                 }
@@ -172,6 +187,18 @@ class AddEmployeePresenter: ObservableObject{
         Task{
             do{
                 let response = try await interactor.deleteEmployee(id: id)
+                await MainActor.run{
+                    if response == true{
+                        self.alert = .success(
+                            title: "Success",
+                            message: "Employee has been removed successfully.",
+                            onClick: {
+                                self.reloadListScreen()
+                                self.goToRootScreen()
+                        })
+                    }
+                }
+                
                 
             }catch let error{
                 print(error.localizedDescription)
@@ -205,5 +232,9 @@ class AddEmployeePresenter: ObservableObject{
     
     func goToPreviousScreen(){
         router.goToBack()
+    }
+    
+    func goToRootScreen(){
+        router.goToRootScreen()
     }
 }

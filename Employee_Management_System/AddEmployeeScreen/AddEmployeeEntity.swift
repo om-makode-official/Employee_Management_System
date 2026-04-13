@@ -8,12 +8,14 @@
 import Foundation
 
 enum AlertResponse: Identifiable{
-    case delete(title: String, message: String, onClick: () -> Void)
+    case success(title: String, message: String, onClick: () -> Void)
     
     var id: Int{
         switch self{
-        case .delete(_,_,_):
+        case .success(_,_,_):
             return 0
+        
         }
+        
     }
 }

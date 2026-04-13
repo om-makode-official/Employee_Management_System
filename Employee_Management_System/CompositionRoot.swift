@@ -33,12 +33,23 @@ class CompositionRoot{
         navVC.pushViewController(details, animated: true)
     }
 
-    func navigateToAddEmployeeScreen(_ delegate: ReloadData,_ employee: EmployeeListModel?, _ detailsDelegate: ReloadDetailsDelegateProtocol?){
-        let vc = AddEmployeeBuilder().createModule(popScreen, delegate, employee, detailsDelegate)
-        navVC.pushViewController(vc, animated: true)
-    }
+    func navigateToAddEmployeeScreen(
+        _ delegate: ReloadData,
+        _ employee: EmployeeListModel?,
+        _ detailsDelegate: ReloadDetailsDelegateProtocol?){
+            let vc = AddEmployeeBuilder().createModule(popScreen,
+                                                       delegate,
+                                                       employee,
+                                                       detailsDelegate,
+                                                       popToRootScreen)
+            navVC.pushViewController(vc, animated: true)
+        }
     
     func popScreen(){
         navVC.popViewController(animated: true)
+    }
+    
+    func popToRootScreen(){
+        navVC.popToRootViewController(animated: true)
     }
 }

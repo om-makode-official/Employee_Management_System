@@ -10,12 +10,18 @@ import Foundation
 class AddEmployeeRouter{
     
     let popScreen: () -> Void
+    let popToRootScreen: () -> Void
     
-    init(popScreen: @escaping () -> Void) {
+    init(popScreen: @escaping () -> Void,
+         popToRootScreen: @escaping () -> Void) {
         self.popScreen = popScreen
+        self.popToRootScreen = popToRootScreen
     }
     
     func goToBack(){
         self.popScreen()
+    }
+    func goToRootScreen(){
+        self.popToRootScreen()
     }
 }

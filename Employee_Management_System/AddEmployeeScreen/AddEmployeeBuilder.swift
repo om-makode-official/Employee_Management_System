@@ -13,9 +13,10 @@ class AddEmployeeBuilder{
     func createModule(_ popScreen: @escaping () -> Void,
                       _ delegate: ReloadData,
                       _ employee: EmployeeListModel?,
-                      _ detailsDelegate: ReloadDetailsDelegateProtocol?) -> UIViewController{
+                      _ detailsDelegate: ReloadDetailsDelegateProtocol?,
+                      _ popToRootScreen: @escaping () -> Void) -> UIViewController{
         
-        let router = AddEmployeeRouter(popScreen: popScreen)
+        let router = AddEmployeeRouter(popScreen: popScreen, popToRootScreen: popToRootScreen)
         let interactor = AddEmployeeInteractor()
         let presenter = AddEmployeePresenter(router: router, interactor: interactor, employee: employee)
         presenter.delegate = delegate

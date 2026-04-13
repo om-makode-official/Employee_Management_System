@@ -135,14 +135,14 @@ struct AddEmployeeView: View {
         
         //            .alert("Success", isPresented: $presenter.showAlert) {
         //                Button("OK") {
-        //                    if presenter.identifier == "edit"{
-        //                        presenter.reloadListScreen()
-        //                        presenter.reloadDetailsScreen()
-        //                        presenter.goToPreviousScreen()
-        //                    }else{
-        //                        presenter.reloadListScreen()
-        //                        presenter.goToPreviousScreen()
-        //                    }
+//                            if presenter.identifier == "edit"{
+//                                presenter.reloadListScreen()
+//                                presenter.reloadDetailsScreen()
+//                                presenter.goToPreviousScreen()
+//                            }else{
+//                                presenter.reloadListScreen()
+//                                presenter.goToPreviousScreen()
+//                            }
         //
         //                }} message: {
         //                Text("Employee has been successfully added to the system.")
@@ -152,14 +152,18 @@ struct AddEmployeeView: View {
     }
     
     private func alertView(_ alert: AlertResponse) -> Alert{
-        switch presenter.alert{
+        switch alert{
             
-        case .delete(let title, let message, let onClick):
+        case .success(let title, let message, let onClick):
             return Alert(title: Text(title),
                          message: Text(message),
                          dismissButton: .default(Text("OK")){
                 onClick()
             })
+            
+       
+            
+            
         }
     }
         
